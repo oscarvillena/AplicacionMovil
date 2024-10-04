@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/fotofondomon"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:stretchColumns="*">
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ID_tarea"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nombre"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Descripcion"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fecha_Tarea"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Estado"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ID_Usuario"
+                    android:textStyle="bold" />
+            </TableRow>
+
+
+        </TableLayout>
+
+        <EditText
+            android:id="@+id/etID_usuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tableLayout"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:hint="ID de Usuario" />
+
+        <LinearLayout
+            android:id="@+id/editTextContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etID_usuario"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp">
+
+            <EditText
+                android:id="@+id/etID_tarea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="ID de Tarea"
+                android:inputType="number"
+                android:layout_marginTop="16dp"/>
+
+            <EditText
+                android:id="@+id/etNombre_tarea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nombre de Tarea"
+                android:layout_marginTop="16dp"/>
+
+            <EditText
+                android:id="@+id/etDescripcion_tarea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Descripción de Tarea"
+                android:layout_marginTop="16dp"/>
+
+            <EditText
+                android:id="@+id/etFecha_tarea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Fecha de Tarea Formato Formato año/mes/dias hora/minutos/segundos"
+                android:layout_marginTop="16dp"/>
+
+            <EditText
+                android:id="@+id/etEstado_tarea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Estado de Tarea"
+                android:layout_marginTop="16dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextContainer"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp">
+
+            <Button
+                android:id="@+id/btnCrear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Crear"
+                app:cornerRadius="20dp"
+                android:layout_marginTop="16dp"/>
+
+            <Button
+                android:id="@+id/btnModificar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Modificar"
+                app:cornerRadius="20dp"
+                android:layout_marginTop="16dp"/>
+
+            <Button
+                android:id="@+id/btnEliminar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Eliminar"
+                app:cornerRadius="20dp"
+                android:layout_marginTop="16dp"/>
+
+            <Button
+                android:id="@+id/btnVolver"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Volver"
+                app:cornerRadius="20dp"
+                android:layout_marginTop="16dp"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

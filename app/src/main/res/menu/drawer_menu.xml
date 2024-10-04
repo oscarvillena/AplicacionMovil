@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_option1"
+            android:title="Tareas" />
+        <item
+            android:id="@+id/nav_option2"
+            android:title="Lista de compra" />
+        <item
+            android:id="@+id/nav_option3"
+            android:title="Citas medicas" />
+        <item
+            android:id="@+id/nav_calendario"
+            android:title="Calendario" />
+        <item
+            android:id="@+id/nav_galeria"
+            android:title="Galeria" />
+        <item
+            android:id="@+id/nav_puntos"
+            android:title="Puntos" />
+        <item
+            android:id="@+id/nav_chat"
+            android:title="Chat" />
+        <item
+            android:id="@+id/nav_gestion"
+            android:title="Gestion Usuarios" />
+        <item
+            android:id="@+id/nav_logout"
+            android:title="Cerrar Sesión" />
+    </group>
+</menu>

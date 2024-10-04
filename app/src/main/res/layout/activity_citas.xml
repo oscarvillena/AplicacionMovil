@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fotofondomon"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:stretchColumns="*">
+
+            <!-- Encabezado de la tabla -->
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ID_cita"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fecha y Hora"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Médico"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Motivo"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ID_usuario"
+                    android:textStyle="bold" />
+
+            </TableRow>
+
+            <!-- Aquí se agregarán dinámicamente las filas de citas médicas -->
+
+        </TableLayout>
+
+        <!-- Contenedor de EditText -->
+        <LinearLayout
+            android:id="@+id/editTextContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tableLayout"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp">
+
+            <!-- EditTexts -->
+
+            <EditText
+                android:id="@+id/etID_cita"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="ID de Cita" />
+
+            <EditText
+                android:id="@+id/etFecha_hora"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Fecha y Hora Formato año/mes/dias hora/minutos/segundos" />
+
+            <EditText
+                android:id="@+id/etMedico"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Médico" />
+
+            <EditText
+                android:id="@+id/etMotivo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Motivo" />
+
+            <EditText
+                android:id="@+id/etID_usuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="ID de Usuario" />
+
+        </LinearLayout>
+
+        <!-- Contenedor de Botones -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextContainer"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="33dp"
+            android:layout_marginEnd="16dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+
+            <!-- Botones -->
+            <Button
+                android:id="@+id/btnCrearCita"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Crear"
+                app:cornerRadius="20dp" />
+
+            <Button
+                android:id="@+id/btnModificarCita"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Modificar"
+                app:cornerRadius="20dp" />
+
+            <Button
+                android:id="@+id/btnEliminarCita"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Eliminar"
+                app:cornerRadius="20dp" />
+
+            <Button
+                android:id="@+id/btnVolver"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Volver"
+                app:cornerRadius="20dp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

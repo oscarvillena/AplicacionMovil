@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/fotofondomon"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/imageView"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:layout_marginTop="16dp"
+    android:scaleType="centerCrop"
+    android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/editTextNombreImagen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre de la Imagen"
+        android:layout_marginTop="16dp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/buttonSubir"
+        android:layout_width="361dp"
+        android:layout_height="wrap_content"
+        android:text="Subir Imagen"
+        android:layout_centerHorizontal="true"
+        app:cornerRadius="20dp"
+        android:visibility="gone" />
+
+    <GridView
+        android:id="@+id/gridViewGaleria"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:numColumns="3"
+        android:horizontalSpacing="4dp"
+        android:verticalSpacing="4dp"
+        android:padding="4dp" />
+
+    <Button
+        android:id="@+id/buttonSubirImagen"
+        android:layout_width="361dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Añadir imagen"
+        app:cornerRadius="20dp" />
+
+    <Button
+        android:id="@+id/buttonVolver"
+        android:layout_width="359dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="start"
+        android:text="Volver"
+        app:cornerRadius="20dp" />
+</LinearLayout>
